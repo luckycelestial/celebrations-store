@@ -38,7 +38,7 @@ export function Navbar() {
       message += `\n${i + 1}. *${item.title}*${item.priceRange ? ` (${item.priceRange})` : ''}`
     })
     message += '\n\nCould you please let me know about their availability and details?'
-    return encodeURIComponent(message)
+    return message
   }
 
   useEffect(() => {
